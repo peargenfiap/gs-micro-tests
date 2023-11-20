@@ -20,7 +20,7 @@
 
 - 1° Clone o repositório:
 ```bash
-git clone [https://github.com/peargenfiap/gs-micr-2sem-front.git](https://github.com/peargenfiap/gs-micro-tests.git)
+git clone https://github.com/peargenfiap/gs-micr-2sem-front.git
 ```
 - 2° Instale todas as dependências do projeto:
 ```bash
