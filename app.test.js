@@ -1,8 +1,10 @@
 const request = require("supertest");
 
+const BASE_URL = "http://localhost:8080";
+
 describe("GET /v1/consume", () => {
   it("deve responder com dados do indicador", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/consume/")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -19,7 +21,7 @@ describe("GET /v1/consume", () => {
 
 describe("GET /v1/objetivos/", () => {
   it("deve ser um array com objetos contendo as propriedades id, objetivos e indicadores", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/objetivos/")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -34,7 +36,7 @@ describe("GET /v1/objetivos/", () => {
   });
 
   it("cada indicador deve ter id e descricao", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/objetivos/")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -48,7 +50,7 @@ describe("GET /v1/objetivos/", () => {
   });
 
   it("deve ter um item específico com id e indicadores corretos", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/objetivos/")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -60,7 +62,7 @@ describe("GET /v1/objetivos/", () => {
   });
 
   it("deve ter um número específico de itens e indicadores", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/objetivos/")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -73,7 +75,7 @@ describe("GET /v1/objetivos/", () => {
 
 describe("GET /v1/indicator/{id}", () => {
   it("deve ser um array com objetos contendo as propriedades ano e consumo", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/indicator/3.1.1")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -86,7 +88,7 @@ describe("GET /v1/indicator/{id}", () => {
   });
 
   it("deve ter ano e consumo como strings", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/indicator/3.1.1")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -98,7 +100,7 @@ describe("GET /v1/indicator/{id}", () => {
   });
 
   it("deve ter um objeto específico com ano e consumo corretos", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/indicator/3.1.1")
       .expect("Content-Type", /json/)
       .expect(200);
@@ -109,7 +111,7 @@ describe("GET /v1/indicator/{id}", () => {
   });
 
   it("deve ter um número específico de itens", async () => {
-    const res = await request("http://localhost:8080")
+    const res = await request(BASE_URL)
       .get("/v1/indicator/3.1.1")
       .expect("Content-Type", /json/)
       .expect(200);
