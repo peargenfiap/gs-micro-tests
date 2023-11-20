@@ -33,9 +33,9 @@ k6 run script.ts
 ```
 
 # Prints dos testes:
-## Teste de carga - Simulando 100 usuários por 5 minutos.
+## Teste de carga - Simulando a interação de 100 usuários por 5 minutos.
 ![image](https://github.com/peargenfiap/gs-micro-tests/assets/115407377/c5367356-1552-4b00-812b-cda63c4427f6)
 
-## Métricas de Integração:
+## Teste de Integração:
 ![image](https://github.com/peargenfiap/gs-micro-tests/assets/115407377/2623efe6-ce5c-40e8-a8d8-922504060ad0)
 
