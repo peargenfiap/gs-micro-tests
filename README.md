@@ -11,8 +11,8 @@
 - **JavasScript**
 
 ## Bibliotecas
-- **@express**
-- **@k6**
+- **express**
+- **k6**
 - **supertest**
 - **jest**
 
