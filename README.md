@@ -26,10 +26,13 @@ git clone https://github.com/peargenfiap/gs-micr-2sem-front.git
 ```bash
 npm install
 ```
-- 3° Para rodar os testes de carga, entre na pasta `carga` e rode o comando:
-
+- 3° Para rodar os `testes de carga`, entre na pasta `carga` e rode o comando:
 ```bash
 k6 run script.ts
+```
+- 4° Para rodar o teste de `integração` rode o comando:
+```bash
+npm run test
 ```
 
 # Prints dos testes:
