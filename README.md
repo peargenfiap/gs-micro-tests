@@ -28,7 +28,7 @@ npm install
 ```
 - 3° Para rodar os `testes de carga`, entre na pasta `carga` e rode o comando:
 ```bash
-k6 run script.ts
+k6 run script.js
 ```
 - 4° Para rodar o teste de `integração` rode o comando:
 ```bash
